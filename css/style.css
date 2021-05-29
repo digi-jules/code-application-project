@@ -79,10 +79,11 @@ ul {
 
 .section-title h2 {
     font-size: 40px;
-    color: var(--color-5);
+    color: var(--main-color);
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
+    margin: 0;
 }
 
 /*--navbar--*/
@@ -90,7 +91,6 @@ ul {
     background-color: var(--main-color);
     padding: 20px 20px;
 }
-
 
 .navbar > .container {
     padding: 15px 0;
@@ -132,8 +132,8 @@ ul {
 
 /*--home section--*/
 .home {
-    min-height: 100vh;
-    padding: 150px 0;
+    min-height: 80vh;
+    padding: 50px 0;
 }
 
 .home-img {
@@ -146,20 +146,88 @@ ul {
 .home-text h1 {
     font-size: 45px;
     font-weight: 700;
-    color: var(--color-5);
+    color: var(--main-color);
     margin: 0 0 20px;
 }
 
 .home-text p {
     font-size: 18px;
     line-height: 28px;
-    color: var(--color-5);
+    color: var(--main-color);
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .home .home-btn {
     margin-top: 40px;
+}
+
+/*--mental health--*/
+.mental-health {
+    background-color: oldlace;
+}
+
+.mental-health .section-title {
+    margin-bottom: 20px;
+}
+
+.mental-health .section-title h2 {
+    text-align: right;
+}
+
+.mental-health-img {
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.mental-health-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--main-color);
+    margin: 0 0 15px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.mental-health-item {
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.mental-health-item h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: oldlace;
+    margin: 0 0 5px;
+}
+
+/*.mental-health-item span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+}*/
+
+.mental-health-item.style-1 {
+    background-color: var(--main-color);
+}
+
+.mental-health-item.style-2 {
+    background-color: var(--main-color);
+}
+
+.mental-health-item.style-3 {
+    background-color: var(--main-color);
+}
+
+.mental-health-item.style-4 {
+    background-color: var(--main-color);
 }
 
 /*--features--*/
@@ -169,6 +237,9 @@ ul {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .features .feature-item .icon {
@@ -180,22 +251,7 @@ ul {
     color: var(--main-color);
     position: relative;
     z-index: 1;
-}
-
-.features .feature-item .icon::before {
-    content: '';
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-color);
     transition: all 0.5s ease;
-}
-
-.features .feature-item:hover .icon::before {
-    left: 0;
-    border-radius: 50%;
 }
 
 .features .feature-item .icon i {
@@ -205,7 +261,7 @@ ul {
 .features .feature-item h3 {
     font-size: 22px;
     margin: 0 0 20px;
-    color: var(--black-900);
+    color: var(--main-color);
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -214,6 +270,66 @@ ul {
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
-    color: var(--black-400);
+    color: var(--main-color);
+    margin: 0 0 15px;
+}
+
+/*--faq section--*/
+.faq:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 5px 0;
+}
+
+.faq p {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 26px;
     margin: 0;
+}
+
+.faq-item {
+    margin: 30px 0;
+}
+
+/*--footer--*/
+h5 {
+    text-align: center;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+/*--responsive design--*/
+@media(max-width: 767px) {
+    .home-text {
+        margin-bottom: 80px;
+    }
+    .mental-health-img {
+        margin-bottom: 30px;
+    }
+    .section-title h2 {
+        font-size: 35px;
+    }
+    * {
+        text-align: center;
+    }
+}
+@media(max-width: 575px) {
+    .home-text h1 {
+        font-size: 30px;
+    }
+    .home-text p {
+        font-size: 16px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
 }

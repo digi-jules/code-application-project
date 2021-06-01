@@ -4,23 +4,12 @@
 /*--global style--*/
 :root {
     --main-color: #ff624b;
-    --color-1: #ffaf0e;
-    --color-2: #fde838;
-    --color-3: #16d511;
     --color-4: #0f89cf;
     --color-5: #9047F0;
-    /*--not sure if needed start--*/
     --bg-dark: #2b2c2f;
     --main-to-dark-color: var(--main-color);
-    --dark-to-main-color: var(--bg-dark);
     --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
     --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
-    --black-900: #000000;
-    --black-400: #555555;
-    --black-100: #f7f7f7;
-    --black-000: #ffffff;
-    --black-alpha-100: rgba(0,0,0,0.05);
-    /*--not sure if needed end--*/
 }
 
 body {
@@ -195,10 +184,14 @@ ul {
 }
 
 .mental-health-item h4 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
     color: oldlace;
     margin: 0 0 5px;
+}
+
+.mental-health-item span {
+    font-weight: 900;
 }
 
 /*.mental-health-item span {
@@ -311,6 +304,7 @@ ul {
 /*--about--*/
 .about {
     text-align: center;
+    font-size: 14px;
 }
 
 .about p {
@@ -324,7 +318,7 @@ h5 {
     background-color: var(--main-color);
     margin: 0;
     padding: 20px 0;
-    font-size: 16px;
+    font-size: 14px;
     color: oldlace;
 }
 

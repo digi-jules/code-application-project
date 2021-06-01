@@ -92,7 +92,7 @@ ul {
   }
   
   #myBtn:hover {
-    background-color: var(--color-2); /* Add a dark-grey background on hover */
+    background-color: var(--color-2);
   }
 
 /*--navbar--*/
